@@ -16,3 +16,4 @@ __To Do__
 1. Pagination
 2. Additional info
 3. Contact info modal window
+4. Forms validation
