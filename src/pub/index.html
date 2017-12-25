@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Personal Notepad</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css" media="screen">
+  </head>
+  <body>
+      <script
+      src="http://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>      
+    <script type="text/javascript" src="js/utils.js"></script>
+
+<!-- модальное окно -->
+<div class="modal" id="modal-box">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Edit contact</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" id="modal-body">
+        <p>
+          <div class="form-group">
+            <label for="fname">First Name</label>
+            <input type="text" class="form-control" id="fname-edit">
+          </div>
+          <div class="form-group">
+            <label for="lname">Last Name</label>
+            <input type="text" class="form-control" id="lname-edit">
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="text" class="form-control" id="phone-edit">
+          </div>
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" id="edit-contact-save">Save changes</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="jumbotron">
+      <h1 class="display-3">My Contacts</h1>
+      <p class="lead">Welcome to the best and coollest notepad app in the universe.</p>
+
+      <div id="new-contact">
+      <p>
+          <form id="new-contact-form">
+            <fieldset>
+              <legend>Add new contact</legend>
+              <div class="form-group">
+                <label for="fname">First Name*</label>
+                <input type="text" class="form-control form-control-lg" id="fname" placeholder="Enter contact first name" required="required">
+                <small class="form-text text-muted">Required field</small>
+              </div>
+              <div class="form-group">
+                <label for="lname">Last Name</label>
+                <input type="text" class="form-control form-control-lg" id="lname" placeholder="Enter contact last name">
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone*</label>
+                <input type="text" class="form-control form-control-lg" id="phone" placeholder="Enter contact phone number" required="required">
+                <small class="form-text text-muted">Required field</small>
+              </div>
+              <button type="button" class="btn btn-primary" id="add-user-form">Submit</button>
+              <button type="button" class="btn btn-link" id="close-user-form">Close</button>
+            </fieldset>
+          </form>
+        </p>
+        </div>
+        <div class="row">
+        <button type="button" class="btn btn-primary btn-lg mr-sm-4" id="add-user-button">Add Contact</button>
+          <div id="search-form" class="form-inline">
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search contacts" id="search-form">
+            <div class="form-group">
+                <select class="custom-select" id="search-select">
+                  <option selected="">Select option</option>
+                  <option value="firstName">First Name</option>
+                  <option value="lastName">Last Name</option>
+                  <option value="phone">Phone</option>
+                </select>
+              </div>
+            <button class="btn btn-info my-2 my-sm-0 mr-sm-2" type="button" id="search-button">Search</button>
+            <button class="btn btn-secondary" type="button" id="reset-button">Reset</button>
+          </form>
+        </div>
+        </div>
+        <hr class="my-4">
+        <div id="alert"></div>
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">First Name</th>
+              <th scope="col">Last Name</th>
+              <th scope="col">Phone</th>
+              <th scope="col">Options</th>
+            </tr>
+          </thead>
+          <tbody id="contacts-list">
+          </tbody>
+        </table> 
+    </div>
+  </body>
+</html>
