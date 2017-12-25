@@ -1,5 +1,4 @@
-# notepad
-Notepad Web App
+# Notepad Web App
 ---
 Home work for the Netology.ru lesson "MongDB queries".
 Used tools: NodeJS, Express, MongoDB, JQuery.
