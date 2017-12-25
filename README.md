@@ -3,6 +3,7 @@ Notepad Web App
 ---
 Home work for the Netology.ru lesson "MongDB queries".
 Used tools: NodeJS, Express, MongoDB, JQuery.
+
 __Features__:
 1. One page app without reloading.
 2. List all contacts on main page.
