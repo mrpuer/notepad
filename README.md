@@ -33,5 +33,5 @@ __To Do__
 
 ![App main page](pic/main-page.png "App main page")
 ![Add new contact](pic/new-contact.png "Add new contact")
-![Edit contact modal window](pic/new-contact.png "Edit contact")
-![Search](pic/new-contact.png "Search")
+![Edit contact modal window](pic/edit-contact.png "Edit contact")
+![Search](pic/search.png "Search")
