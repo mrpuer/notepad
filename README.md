@@ -1,5 +1,5 @@
 # Notepad Web App
----
+
 Home work for the Netology.ru lesson "MongDB queries".
 
 Using:
