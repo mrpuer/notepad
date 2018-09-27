@@ -1,7 +1,19 @@
 # Notepad Web App
 ---
 Home work for the Netology.ru lesson "MongDB queries".
-Used tools: NodeJS, Express, MongoDB, JQuery.
+
+Using:
++ Add new MongoDB database `notepad` with `contacts` collection.
++ Run `mongod`
++ Run webserver `node app/index.js`
+
+Used tools:
++ NodeJS
++ Express
++ MongoDB
++ JQuery
++ Bootstrap
++ body-parser
 
 __Features__:
 1. One page app without reloading.
@@ -16,3 +28,10 @@ __To Do__
 2. Additional info
 3. Contact info modal window
 4. Forms validation
+
+***
+
+![App main page](pic/main-page.png "App main page")
+![Add new contact](pic/new-contact.png "Add new contact")
+![Edit contact modal window](pic/new-contact.png "Edit contact")
+![Search](pic/new-contact.png "Search")
